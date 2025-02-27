@@ -26,3 +26,5 @@ jobs:
 
       - name: Run Dependency Check
         run: ./gradlew dependencyCheckAggregate
+        with:
+          distribution: 'default' # Add the required distribution input
