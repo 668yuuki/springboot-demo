@@ -22,8 +22,5 @@ jobs:
           distribution: 'liberica'
           java-version: '17' # 使用するJavaのバージョンを指定
 
-      - name: Build with Gradle
-        run: ./gradlew build
-
       - name: Run Dependency Check
         run: ./gradlew dependencyCheckAggregate
