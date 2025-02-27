@@ -21,6 +21,7 @@ jobs:
         with:
           distribution: 'liberica'
           java-version: '17' # 使用するJavaのバージョンを指定
-
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
       - name: Run Dependency Check
         run: ./gradlew dependencyCheckAggregate
