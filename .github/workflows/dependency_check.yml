@@ -19,6 +19,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
+          distribution: 'liberica'
           java-version: '17' # 使用するJavaのバージョンを指定
 
       - name: Build with Gradle
