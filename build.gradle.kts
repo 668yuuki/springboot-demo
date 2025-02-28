@@ -36,3 +36,9 @@ kotlin {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+dependencyCheck {
+	nvd {
+		url = 'https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/'
+	}
+}
