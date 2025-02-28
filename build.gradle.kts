@@ -39,6 +39,6 @@ tasks.withType<Test> {
 
 dependencyCheck {
 	nvd {
-		url = 'https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/'
+		url = "https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/"
 	}
 }
