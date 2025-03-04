@@ -27,6 +27,11 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+dependencyCheck {
+    hostedSuppressions {
+        url = "https://dependency-check.github.io/DependencyCheck/suppressions/publishedSuppressions.xml"
+    }
+}
 kotlin {
 	compilerOptions {
 		freeCompilerArgs.addAll("-Xjsr305=strict")
